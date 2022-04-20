@@ -1,0 +1,221 @@
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    background-color: #ffeedd;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+    height: 100%;
+
+}
+
+h3 {
+	font-color: #8c8a8b !important;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.posts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.post {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #ccc;
+}
+
+.post:hover {
+    box-shadow: 0px 10px 20px 10px #ccc
+}
+
+.post .username {
+    background-color: white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.post .username p {
+    color: #838383;
+    font-weight: bold;
+}
+
+.post .content-wrapper {
+    background-color: #ededed;
+    padding: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.post .content-wrapper .title {
+    color: #838383;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px !important;
+}
+
+.post .content-wrapper .title p {
+    margin: 0 10px 0 0;
+}
+
+.post .content-wrapper .content {
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+}
+
+#deletePostModal .modal-content {
+  width: 30%;
+  margin: 15% auto;
+}
+
+#deletePostModal .button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#deletePostModal .button-wrapper button {
+  padding: 5px 25px;
+  border-radius: 0;
+}
+
+#confirmDelete {
+    align-items: left !important;
+}
+
+#cancelDelete {
+    align-items: right !important;
+}
+
+.fa-trash,
+.fa-ellipsis-h {
+  color: #838383;
+  float: right;
+  cursor: pointer;
+}
+
+.btn-danger {
+    margin-top: 30px;
+}
+
+.topButtons {
+    width: 100px;
+    height: 40px;
+    padding: 8px 5px 8px 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 90%;
+    background: #0000ff;
+    color: #fff;
+    float: right;                  
+    border-color: white;
+    margin: 0px 0px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.title {
+   font-family: 'Montez', cursive;
+   font-size: 30px;
+   color: blue;
+   margin: 0;
+}
+
+.sub-title {
+   font-family: 'Ubuntu Mono', monospace;
+   font-size: 10;
+   color: black;
+   margin: 0;
+}
+
+.container {
+   width: 100%;
+   /* padding-right: 15px; */
+   /* padding-left: 15px; */
+   margin-right: 0px !important;
+   margin-left: 0px !important;
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 10px;
+}
+/*Modal design*/
+.modal {
+ display: none; /* It is hidden by default */
+ position: fixed; /* Not movable */
+ z-index: 1; /* Displays on top of the page */
+ left: 0;
+ top: 0;
+ width: 100%; 
+ height: 100%;
+ overflow: hidden; /* Make scrollbar available when needed */
+ background-color: rgb(0, 0, 0);
+ background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content design */
+.modal-content {
+ background-color: #ffffff;
+ margin: 10% auto; 
+ padding: 10px;
+ border: 1px solid #888;
+ width: 30%; 
+ border-radius: 0;
+}
+
+.modal-content .modal-heading {
+ margin: 0;
+}
+
+.not-member {
+ text-align: center;
+ margin: 10px;
+ font-weight: bold;
+ font-size: 12px;
+}
+
+.not-member span {
+ color: blue;
+ cursor: pointer;
+}
+
+/* The Close Button */
+.close-icon {
+ float: right;
+ cursor: pointer;
+}
+
+input {
+ background-color: #f1f1f1 !important;
+}
+
+.btn-success {
+ margin-top: 30px;
+}
